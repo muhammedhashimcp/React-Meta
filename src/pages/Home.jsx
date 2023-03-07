@@ -4,7 +4,6 @@ import Creator from '../components/cards/Creator';
 import { creatorData } from '../components/cards/creatorData';
 import Navbar from '../components/navigation/Navbar';
 import { useState } from 'react';
-import Modal from '../components/modals/Space';
 import EditProfile from '../components/modals/EditProfile';
 import ChooseSpace from '../components/modals/ChooseSpace';
 import Space from '../components/modals/Space';

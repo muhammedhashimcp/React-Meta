@@ -1,5 +1,4 @@
 import React from 'react';
-import profile from '../../images/profile.png';
 import creater1 from '../../images/creater-1.png';
 
 export default function ChooseSpace({ setShowModal, showModal }) {

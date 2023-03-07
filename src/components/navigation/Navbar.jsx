@@ -1,10 +1,9 @@
 import { Disclosure } from '@headlessui/react';
 
-import Logo from '../../images/logo.png';
+// import Logo from '../../images/logo.png';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import profile from '../../images/profile.png';
 import { AiOutlinePlus } from 'react-icons/ai';
-import ChooseSpace from '../modals/ChooseSpace';
 const navigation = [
 	{ name: 'Home', href: '/', current: true },
 	{ name: 'Contact Us', href: '/contact-us', current: false },

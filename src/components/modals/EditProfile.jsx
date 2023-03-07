@@ -1,9 +1,8 @@
 import React from 'react';
 import profile from '../../images/profile.png';
 export default function EditProfile({ setShowModal, showModal }) {
-	// const [showModal, setShowModal] = React.useState(false);
 	return (
-		<>
+		<> 
 			{/* <button
 				className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
 				type="button"
@@ -51,11 +50,11 @@ export default function EditProfile({ setShowModal, showModal }) {
 											/>
 
 											<div class="p-5 ">
-												<a href="#">
+												
 													<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 														Joseph Das
 													</h5>
-												</a>
+											
 												<p className="mb-3 font-normal text-gray-700 dark:text-gray-400 mx-auto">
 													Here are the biggest
 													enterprise technology

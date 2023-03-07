@@ -21,7 +21,7 @@ export default function Space({ setShowModal, showModal }) {
 											X
 										</span>
 									</button>
-								</div>
+								</div> 
 								{/*body*/}
 								<div>
 									<div className="flex justify-center m-5">
