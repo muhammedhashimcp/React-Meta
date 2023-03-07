@@ -1,12 +1,11 @@
-import { MdGroups } from 'react-icons/md';
 import { AiOutlinePlus } from 'react-icons/ai';
 import Creator from '../components/cards/Creator';
 import { creatorData } from '../components/cards/creatorData';
-import Navbar from '../components/navigation/Navbar';
 import { useState } from 'react';
 import EditProfile from '../components/modals/EditProfile';
 import ChooseSpace from '../components/modals/ChooseSpace';
 import Space from '../components/modals/Space';
+import Carousel from '../components/corousel/Carousel';
 
 export default function Home() {
 	// const [showModal, setShowModal] = useState(false);
@@ -16,17 +15,17 @@ export default function Home() {
 
 	return (
 		<>
-			<div className="relative bg-hero-pattern bg-cover  bg-no-repeat ">
+			<div className="w-screen flex justify-center">
+				<Carousel />
+			</div>
+			{/* <div className="relative bg-hero-pattern bg-cover  bg-no-repeat ">
 				<div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-black/25"></div>
 				<Navbar
 					setShowEditProfileModal={setShowEditProfileModal}
 					setShowModal={setShowCreateSpaceModal}
 					showModal={showCreateSpaceModal}
-				/>
-				{/* <Navbar
-					setShowModal={setShowChooseSpaceModal}
-					showModal={showChooseSpaceModal}
-				/> */}
+				/> 
+			
 				<main>
 					<section className="relative ">
 						<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -58,7 +57,7 @@ export default function Home() {
 						</div>
 					</section>
 				</main>
-			</div>
+			</div> */}
 			<section>
 				<div className="w-full mx-4 md:mx-auto text-center md:w-8/12 xl:w-6/12 md:text-center my-10 ">
 					<h1 className="mb-8 mt-4 text-3xl font-bold leading-none tracking-normal text-gray-900 md:text-5xl md:tracking-tight">

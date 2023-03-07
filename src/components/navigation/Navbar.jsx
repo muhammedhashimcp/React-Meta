@@ -16,7 +16,7 @@ function classNames(...classes) {
 const Navbar = ({ setShowModal, setShowEditProfileModal }) => {
 	return (
 		<>
-			<Disclosure as="nav" className=" sticky top-5 z-50">
+			<Disclosure as="nav" className="absolute bg-transparent top-12 z-50 w-full">
 				{({ open }) => (
 					<section>
 						<div className="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8 font-display">
