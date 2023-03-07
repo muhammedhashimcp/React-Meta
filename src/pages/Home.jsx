@@ -7,6 +7,7 @@ import ChooseSpace from '../components/modals/ChooseSpace';
 import Space from '../components/modals/Space';
 import Carousel from '../components/corousel/Carousel';
 import { appContext } from '../App';
+import Loading from '../components/modals/Loading';
 
 export default function Home() {
 	
@@ -17,6 +18,8 @@ export default function Home() {
 		setShowChooseSpaceModal,
 		showCreateSpaceModal,
 		setShowCreateSpaceModal,
+		showLoadingModal,
+		setShowLoadingModal,
 	} = useContext(appContext);
 	return (
 		<>
@@ -121,12 +124,36 @@ export default function Home() {
 									showModal={showCreateSpaceModal}
 								/>
 							)}
+							{showLoadingModal && (
+								<Loading
+									setShowModal={setShowLoadingModal}
+									showModal={showLoadingModal}
+									Private={true}
+									// space={true}
+								/>
+							)}
 						</div>
 					</div>
 					{/* cards for creators */}
 					<div class="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 md:gap-10">
 						{/* card 1 */}
 						<Creator data={creatorData} />
+					</div>
+					<div>
+						<button
+							className=" w-full rounded px-4 py-1 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto inline-flex items-center border-2 border-cyan-200  "
+							onClick={() => setShowLoadingModal(true)}
+						>
+							<AiOutlinePlus className="w-6 h-6 mr-2 text-yellow-500" />
+							Loading
+						</button>
+						<button
+							className=" w-full rounded px-4 py-1 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto inline-flex items-center border-2 border-cyan-200  "
+							onClick={() => setShowLoadingModal(true)}
+						>
+							<AiOutlinePlus className="w-6 h-6 mr-2 text-yellow-500" />
+							Private code
+						</button>
 					</div>
 				</div>
 			</section>
