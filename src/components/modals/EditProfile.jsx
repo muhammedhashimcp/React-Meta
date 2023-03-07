@@ -18,7 +18,7 @@ export default function EditProfile({ setShowModal, showModal }) {
 							<div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none ">
 								{/*header*/}
 								<div className="flex items-start justify-between p-5 ">
-									<div class="mt-10 grid grid-cols-3 w-full">
+									<div className="mt-10 grid grid-cols-3 w-full">
 										<div className="">
 											<h1>MetaLogo</h1>
 										</div>
@@ -40,16 +40,16 @@ export default function EditProfile({ setShowModal, showModal }) {
 								</div>
 								{/*body*/}
 								<div>
-									<div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 md:mx-10">
+									<div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 md:mx-10">
 										{/* column 1 */}
-										<div class="max-w-sm bg-white dark:bg-gray-800 dark:border-gray-700  mx-auto ">
+										<div className="max-w-sm bg-white dark:bg-gray-800 dark:border-gray-700  mx-auto ">
 											<img
 												className="rounded-t-lg mx-auto w-50 h-50"
 												src={profile}
 												alt="profile"
 											/>
 
-											<div class="p-5 ">
+											<div className="p-5 ">
 												
 													<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 														Joseph Das
@@ -64,34 +64,34 @@ export default function EditProfile({ setShowModal, showModal }) {
 										</div>
 										{/* column 2 */}
 
-										<div class="w-full max-w-sm py-4 bg-white  sm:p-6 md:py-8">
-											<form class="space-y-6" action="#">
+										<div className="w-full max-w-sm py-4 bg-white  sm:p-6 md:py-8">
+											<form className="space-y-6" action="#">
 												<div>
 													<label
 														for="gender"
-														class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+														className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 													>
 														Select gender
 													</label>
 													<div>
-														<div class="flex flex-nowrap justify-center gap-4">
-															<button class="bg-[#FFF7ED] border-2 border-[#ffdfb7] text-[#D7AA2A] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+														<div className="flex flex-nowrap justify-center gap-4">
+															<button className="bg-[#FFF7ED] border-2 border-[#ffdfb7] text-[#D7AA2A] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
 																Male
 															</button>
-															<button class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+															<button className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
 																Female
 															</button>
-															<button class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+															<button className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
 																Other
 															</button>
 														</div>
 													</div>
 												</div>
-												<div class="flex flex-nowrap justify-center gap-4">
+												<div className="flex flex-nowrap justify-center gap-4">
 													<div className="w-2/3">
 														<label
 															for="userName"
-															class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+															className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 														>
 															User Name
 														</label>
@@ -99,7 +99,7 @@ export default function EditProfile({ setShowModal, showModal }) {
 															type="userName"
 															name="userName"
 															id="userName"
-															class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+															className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 															placeholder="user name"
 															required
 														/>
@@ -107,7 +107,7 @@ export default function EditProfile({ setShowModal, showModal }) {
 													<div className="w-1/3">
 														<label
 															for="age"
-															class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+															className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 														>
 															Age
 														</label>
@@ -115,7 +115,7 @@ export default function EditProfile({ setShowModal, showModal }) {
 															type="age"
 															name="age"
 															id="age"
-															class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+															className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 															placeholder="xx"
 															required
 														/>
@@ -124,7 +124,7 @@ export default function EditProfile({ setShowModal, showModal }) {
 												<div>
 													<label
 														for="Bio"
-														class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+														className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 													>
 														Bio
 													</label>
@@ -133,7 +133,7 @@ export default function EditProfile({ setShowModal, showModal }) {
 														name="Bio"
 														id="Bio"
 														placeholder="Lorem ipsum"
-														class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+														className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 														required
 													/>
 												</div>

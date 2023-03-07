@@ -8,6 +8,7 @@ function App() {
 		const [showChooseSpaceModal, setShowChooseSpaceModal] = useState(false);
 		const [showCreateSpaceModal, setShowCreateSpaceModal] = useState(false);
 		const [showLoadingModal, setShowLoadingModal] = useState(false);
+		const [showModal, setShowModal] = useState(false);
 	return (
 		<appContext.Provider
 			value={{
@@ -19,6 +20,8 @@ function App() {
 				setShowCreateSpaceModal,
 				showLoadingModal,
 				setShowLoadingModal,
+				showModal,
+				setShowModal,
 			}}
 		>
 			<Router>

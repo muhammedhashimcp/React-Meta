@@ -8,9 +8,14 @@ import Space from '../components/modals/Space';
 import Carousel from '../components/corousel/Carousel';
 import { appContext } from '../App';
 import Loading from '../components/modals/Loading';
+import Modal from '../components/modals/Modal';
+import Content1 from '../components/modals/Content1';
+import Content2 from '../components/modals/Content2';
 
 export default function Home() {
-	
+	const [modalContent, setModalContent] = useState(() => (
+		<h1>content not available</h1>
+	));
 	const {
 		showEditProfileModal,
 		setShowEditProfileModal,
@@ -20,7 +25,13 @@ export default function Home() {
 		setShowCreateSpaceModal,
 		showLoadingModal,
 		setShowLoadingModal,
+		showModal,
+		setShowModal,
 	} = useContext(appContext);
+	const handleModal = (content) => {
+		setShowModal(true)
+		setModalContent(content)
+	}
 	return (
 		<>
 			<div className="w-screen flex justify-center">
@@ -132,10 +143,17 @@ export default function Home() {
 									// space={true}
 								/>
 							)}
+							{showModal && (
+								<Modal
+									setShowModal={setShowModal}
+									showModal={showModal}
+									content={modalContent}
+								/>
+							)}
 						</div>
 					</div>
 					{/* cards for creators */}
-					<div class="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 md:gap-10">
+					<div className="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 md:gap-10">
 						{/* card 1 */}
 						<Creator data={creatorData} />
 					</div>
@@ -153,6 +171,18 @@ export default function Home() {
 						>
 							<AiOutlinePlus className="w-6 h-6 mr-2 text-yellow-500" />
 							Private code
+						</button>
+						<button
+							className=" w-full rounded px-4 py-1 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto inline-flex items-center border-2 border-cyan-200  "
+							onClick={() => handleModal(Content1)}
+						>
+							Content Modal 1
+						</button>
+						<button
+							className=" w-full rounded px-4 py-1 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto inline-flex items-center border-2 border-cyan-200  "
+							onClick={() => handleModal(Content2)}
+						>
+							Content Modal 2
 						</button>
 					</div>
 				</div>

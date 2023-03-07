@@ -30,25 +30,25 @@ export default function Space({ setShowModal, showModal }) {
 											tell us
 										</h1>
 									</div>
-									<div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 md:mx-10">
+									<div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 md:mx-10">
 										{/* column 1 */}
-										<div class="rounded overflow-hidden  my-auto">
+										<div className="rounded overflow-hidden  my-auto">
 											<img
 												className="w-full "
 												src={creater1}
 												alt="creater"
 											/>
-											<div class=" inline-flex justify-start px-3 py-2">
+											<div className=" inline-flex justify-start px-3 py-2">
 												<img
 													className="w-10 h-10  rounded-full ring-2 ring-gray-600 dark:ring-gray-500 m-auto mr-2"
 													src={profile}
 													alt="Bordered avatar"
 												></img>
-												<div class="">
-													<div class="font-bold text-xl mb-2">
+												<div className="">
+													<div className="font-bold text-xl mb-2">
 														Creators Name
 													</div>
-													<p class="text-gray-700 text-base">
+													<p className="text-gray-700 text-base">
 														Lorem ipsum dolor sit
 														amet
 													</p>
@@ -57,31 +57,31 @@ export default function Space({ setShowModal, showModal }) {
 										</div>
 										{/* column 2 */}
 
-										<div class="w-full max-w-sm py-4 bg-white  sm:p-6 md:py-8">
-											<form class="space-y-6" action="#">
+										<div className="w-full max-w-sm py-4 bg-white  sm:p-6 md:py-8">
+											<form className="space-y-6" action="#">
 												<div>
 													<label
 														for="gender"
-														class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+														className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 													>
 														Select Room Type
 													</label>
 													<div>
-														<div class="flex flex-nowrap justify-center gap-4">
-															<button class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+														<div className="flex flex-nowrap justify-center gap-4">
+															<button className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
 																Private
 															</button>
-															<button class="bg-[#FFF7ED] border-2 border-[#ffdfb7] text-[#D7AA2A] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+															<button className="bg-[#FFF7ED] border-2 border-[#ffdfb7] text-[#D7AA2A] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
 																Public
 															</button>
 														</div>
 													</div>
 												</div>
-												<div class="flex flex-nowrap justify-start gap-4">
+												<div className="flex flex-nowrap justify-start gap-4">
 													<div className="w-2/3">
 														<label
 															for="title"
-															class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+															className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 														>
 															Enter the Title
 														</label>
@@ -89,7 +89,7 @@ export default function Space({ setShowModal, showModal }) {
 															type="title"
 															name="title"
 															id="title"
-															class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+															className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 															placeholder="title"
 															required
 														/>
@@ -98,7 +98,7 @@ export default function Space({ setShowModal, showModal }) {
 												<div>
 													<label
 														for="description"
-														class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+														className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 													>
 														Enter The Desciption
 													</label>
@@ -107,7 +107,7 @@ export default function Space({ setShowModal, showModal }) {
 														name="description"
 														id="description"
 														placeholder="Lorem ipsum"
-														class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+														className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 														required
 													/>
 												</div>

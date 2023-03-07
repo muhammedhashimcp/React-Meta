@@ -32,11 +32,11 @@ export default function Loading({ setShowModal, showModal,Private,space }) {
 									)}
 									<div className="flex justify-center mx-auto">
 										{Private ? (
-											<form class="w-2/3 p-2" action="#">
+											<form className="w-2/3 p-2" action="#">
 												<div className="w-full ">
 													{/* <label
 														for="userName"
-														class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+														className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 													>
 														User Name
 													</label> */}
@@ -44,7 +44,7 @@ export default function Loading({ setShowModal, showModal,Private,space }) {
 														type="userName"
 														name="userName"
 														id="userName"
-														class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+														className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
 														placeholder="user name"
 														required
 													/>
