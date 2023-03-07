@@ -4,6 +4,8 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import profile from '../../images/profile.png';
 import { AiOutlinePlus } from 'react-icons/ai';
+import { useContext } from 'react';
+import { appContext } from '../../App';
 const navigation = [
 	{ name: 'Home', href: '/', current: true },
 	{ name: 'Contact Us', href: '/contact-us', current: false },
@@ -13,10 +15,20 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 
-const Navbar = ({ setShowModal, setShowEditProfileModal }) => {
+const Navbar = () => {
+	const {
+		// showEditProfileModal,
+		setShowEditProfileModal,
+
+		// showCreateSpaceModal,
+		setShowCreateSpaceModal,
+	} = useContext(appContext);
 	return (
 		<>
-			<Disclosure as="nav" className="absolute bg-transparent top-12 z-50 w-full">
+			<Disclosure
+				as="nav"
+				className="absolute bg-transparent top-6 md:top-12 z-50 w-full"
+			>
 				{({ open }) => (
 					<section>
 						<div className="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8 font-display">
@@ -80,7 +92,9 @@ const Navbar = ({ setShowModal, setShowEditProfileModal }) => {
 											}
 										></img>
 										<button
-											onClick={() => setShowModal(true)}
+											onClick={() =>
+												setShowCreateSpaceModal(true)
+											}
 											className="bg-gray-900  drop-shadow-lg  text-white  border-2 border-gray-700  rounded-xl   py-1 px-4  inline-flex items-center"
 										>
 											<AiOutlinePlus className="w-6 h-6 mr-2 text-yellow-500" />

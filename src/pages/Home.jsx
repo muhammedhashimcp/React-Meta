@@ -1,18 +1,23 @@
 import { AiOutlinePlus } from 'react-icons/ai';
 import Creator from '../components/cards/Creator';
 import { creatorData } from '../components/cards/creatorData';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import EditProfile from '../components/modals/EditProfile';
 import ChooseSpace from '../components/modals/ChooseSpace';
 import Space from '../components/modals/Space';
 import Carousel from '../components/corousel/Carousel';
+import { appContext } from '../App';
 
 export default function Home() {
-	// const [showModal, setShowModal] = useState(false);
-	const [showEditProfileModal, setShowEditProfileModal] = useState(false);
-	const [showChooseSpaceModal, setShowChooseSpaceModal] = useState(false);
-	const [showCreateSpaceModal, setShowCreateSpaceModal] = useState(false);
-
+	
+	const {
+		showEditProfileModal,
+		setShowEditProfileModal,
+		showChooseSpaceModal,
+		setShowChooseSpaceModal,
+		showCreateSpaceModal,
+		setShowCreateSpaceModal,
+	} = useContext(appContext);
 	return (
 		<>
 			<div className="w-screen flex justify-center">

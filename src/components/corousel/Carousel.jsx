@@ -48,15 +48,15 @@ function Carousel() {
 	};
 
 	return (
-		<div className="w-screen h-[780px]  m-auto  px-4 relative group">
+		<div className="w-screen h-[780px]  m-auto   relative group">
 			<div
 				style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
 				className="w-full h-full  bg-cover duration-500"
 			>
 				<div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/95 sm:to-black/25"></div>
 
-				<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-					<div className="max-w-xl text-center sm:text-left text-white">
+				<div className="relative mx-auto max-w-screen-xl px-4 py-32  sm:px-6 lg:flex lg:h-screen items-center lg:px-8">
+					<div className="max-w-xl text-center sm:text-left text-white my-auto">
 						<div className="inline-flex rounded-xl bg-red-600 px-4 py-1.5 mb-5 text-md font-medium text-white   sm:w-auto">
 							<MdGroups size="1.5rem" className="mr-2" />
 							Live Now
